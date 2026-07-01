@@ -13,7 +13,7 @@ export type InterviewPrepResponse = {
   interview_tips: string[];
 };
 
-const API_URL = 'http://127.0.0.1:8001/api/interview-prep';
+const API_URL = 'https://ai-powered-career-assistant-lrpl.onrender.com/api/interview-prep';
 
 export async function generateInterviewPrep(payload: InterviewPrepRequest): Promise<InterviewPrepResponse> {
   const response = await fetch(API_URL, {

@@ -6,7 +6,7 @@ export type ResumeAnalysis = {
   suggested_improvements: string[];
 };
 
-const API_URL = 'http://127.0.0.1:8001/api/resume-review';
+const API_URL = 'https://ai-powered-career-assistant-lrpl.onrender.com/api/resume-review';
 
 export async function analyzeResume(file: File, targetRole: string): Promise<ResumeAnalysis> {
   const formData = new FormData();
